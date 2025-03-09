@@ -1,3 +1,6 @@
+# Env
+.env
+
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
