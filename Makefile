@@ -20,3 +20,14 @@ connect:
 
 connect-to-bd:
 	docker exec -it "${CONTAINER_NAME}" psql --dbname="${DATABASE_NAME}" --username "${DATABASE_USERNAME}" --password "${DATABASE_PASSWORD}"
+
+# Testing docker image.
+build-image:
+	docker build . -t ${IMAGE_NAME}
+
+# - Adhoc tasks.
+run:
+	docker run --name "${CONTAINER_NAME}" --detach --rm "${IMAGE_NAME}"
+
+rm-all-containers:
+	docker rm $(docker ps --quiet --all)
