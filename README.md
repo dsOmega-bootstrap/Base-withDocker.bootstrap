@@ -4,5 +4,5 @@ Has [Base template](https://github.com/dsOmega-bootstrap/Base.bootstrap) feature
 - Docker .env for easier configurability of commands in aforementioned Makefile
 
 ## How to Use
-See [.env.example](./.env.example). Copy it to `.env.example` and fill.
+See [.env.example](./.env.example). Copy it to `.env` and fill.
 
